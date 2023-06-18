@@ -128,6 +128,10 @@ margin:auto;
 }
 .menu_button{
   display: None;
+  margin-right: 3%;
+}
+a img{
+  margin-right: 1%;
 }
 .name{
   font-size: 35px;
@@ -140,6 +144,12 @@ margin:auto;
 }
 .ab{
   font-size: 50px;
+}
+#main_c_2{
+  font-size: 45px;
+}
+#main_c_3{
+  font-size: 20px;
 }
 #main{
   margin:auto;
@@ -179,9 +189,6 @@ margin:auto;
   .hey{
     margin: auto;
   }
-  .navbar img{
-    width: 3%;
-  }
   body{
     font-size: 15px;
   }
@@ -198,7 +205,17 @@ margin:auto;
   }
   .menu_button{
     display: inline-block;
-  }.acad{width: 80%;}.skills{
+    margin-right: 12%;
+  }
+  #main_c_2{font-size: 30px;}
+  #main_c_3{font-size: 10px;}
+  .cc{
+    margin-right: 6%;
+  }
+  .acad{
+    width: 80%;
+  }
+  .skills{
     width: 80%;
   }
   .c1{
@@ -230,7 +247,8 @@ margin:auto;
     height: 90%;
     display: flex;
     flex-direction: column;
-  }.bb{
+  }
+  .bb{
     font-size: 30px;
   }
   .About_Me{
