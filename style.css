@@ -8,6 +8,17 @@
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+
+.phone_nav{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 17%;
+  top: 5%;
+}
+.hide{
+  display: none;
+}
 .name{
   color: black;
   display: inline-block;
@@ -34,7 +45,7 @@
   cursor: pointer;
 }
 a:hover{
-  color: white;
+  background-color: white;
 }
 .main_cont{
   position: absolute;
@@ -98,7 +109,7 @@ margin:auto;
   height: 80%;
 }
 
-.icons img:hover{
+.navbar img:hover{
   cursor: pointer;
 }
 
@@ -107,8 +118,11 @@ margin:auto;
   top: 320%;
   height: 10%;
   width: 100%;
+  scroll-behavior: smooth;
 }
-
+.footer a{
+  color: black;
+}
 .hey{
   font-size: 4rem;
 }
