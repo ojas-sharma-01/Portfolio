@@ -3,7 +3,7 @@
 
 document.querySelectorAll(".nav")[0].addEventListener("click", function(){
   window.scroll({
-  top: 800,
+  top: 1000,
   left: 0,
   behavior: 'smooth'
 });
@@ -11,7 +11,7 @@ document.querySelectorAll(".nav")[0].addEventListener("click", function(){
 
 document.querySelectorAll(".nav")[1].addEventListener("click", function(){
   window.scroll({
-  top: 1700,
+  top: 1900,
   left: 0,
   behavior: 'smooth'
 });
