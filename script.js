@@ -18,7 +18,7 @@ document.querySelectorAll(".nav")[1].addEventListener("click", function(){
 });
 document.querySelectorAll(".nav")[3].addEventListener("click", function(){
   window.scroll({
-  top: 600,
+  top: 700,
   left: 0,
   behavior: 'smooth'
 });
