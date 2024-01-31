@@ -6,18 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
-  <body style = "margin:0;">
+  <body style = "margin: 0; padding: 0; border: 10px solid black;">
     <div class="name font">Ojas Sharma</div>
-    <div class="navbar font"><span class="nav">About Me</span>&nbsp&nbsp&nbsp&nbsp <span>|</span> &nbsp&nbsp&nbsp&nbsp
-      <span class="nav">Project</span>&nbsp&nbsp&nbsp&nbsp <span>|</span> &nbsp&nbsp&nbsp&nbsp<span class="nav" onclick="location.href='mailto:ojassharma2547@gmail.com';">Contact</span>
-      <img class="menu_button" style="position: absolute; right:20%;"src="menu.png" width="30px">
-      <a href = "https://www.linkedin.com/in/ojas-sharma-64aaba246/"><img class = "cc"style="position:absolute; right:15%;"src="in.png" width="30px"></a>
-      <a href = "https://github.com/ojas-sharma-01"><img style="position:absolute; right:10%;"src="git.png" width="30px"/></a></div>
+    <div class="navbar font"><span class="nav vv">
+      <a href="#abb">About Me</a></span>&nbsp&nbsp&nbsp&nbsp <span>|</span> &nbsp&nbsp&nbsp&nbsp
+      <span class="nav vv"><a href="#proo" >Project</a></span>&nbsp&nbsp&nbsp&nbsp <span>|</span> &nbsp&nbsp&nbsp&nbsp<span class="nav vv" onclick="location.href='mailto:ojassharma2547@gmail.com';">Contact</span>
+      <img class="menu_button" style="position: absolute; right:20%;"src="./public/menu.png" width="30px">
+      <a href = "https://www.linkedin.com/in/ojas-sharma-64aaba246/"><img class = "cc"style="position:absolute; right:15%;"src="./public/in.png" width="30px"></a>
+      <a href = "https://github.com/ojas-sharma-01"><img style="position:absolute; right:10%;"src="./public/git.png" width="30px"/></a></div>
     <div class="main_cont font shadow">
-      <img id ="main" src="pc_img.png" height = 60%>
+      <img id ="main" src="./public/pc_img.png"/>
       <div class="c1">
       <div class="hey" style="font-family: 'Sacramento', cursive; font-weight: bold;">Hey there !
         <h1 class="font" id = "main_c_2">Thanks for stopping by.</h1>
@@ -25,45 +26,63 @@
       </div>
     </div>
     <div class="phone_nav hide font" style="font-size: 30px; padding-top:21%;">
-      <img id = "cross" src="cross.png.crdownload" width="5%" style="position: absolute; right:5%; top:26%;">
-      <div class="nav" style="color:black; display: inline-block; padding-bottom:10%; background-color: grey;">About Me</div><br>
-      <div class="nav" style="color:black; display: inline-block; margin-bottom:10%; background-color: grey;">Project</div><br>
-      <div class="nav" style="color:black; background-color: grey;" onclick="location.href='mailto:ojassharma2547@gmail.com';">Contact</div></div>
+      <img id = "cross" src="./public/cross.png.crdownload" width="5%" style="position: absolute; right:5%; top:26%;">
+      <div class="nav" style="color:black; display: inline-block; padding-bottom:10%; background-color: grey;">
+        <a href="#abb">About Me</a></div><br>
+      <div class="nav" style="color:black; display: inline-block; margin-bottom:10%; background-color: grey;">
+        <a href="#proo">
+          Project
+        </a>
+        </div><br>
+      <div class="nav" style="color:black; background-color: grey;" onclick="location.href='mailto:ojassharma2547@gmail.com';">Contact
+    </div></div>
 
-    <div class="About_Me font">
+    <div class="About_Me font" id="abb">
       <h1 class = "bb" style="grid-column: span 2; margin: auto;">𝓐𝓫𝓸𝓾𝓽 𝓜𝓮</h1>
-      <div class="acad shadow"><center><h1>Academics&nbsp&nbsp<img width="10%" src="acad.png"/></h1></center><h3>
+      <div class="acad shadow"><center><h1>Academics&nbsp&nbsp<img width="10%" src="./public/acad.png"/></h1></center><h3>
       <ul><li>Secondary and Senior Secondary from N.K. Bagrodia Public School, Dwarka</li><br>
       <li>Electronics and Communication(with AI ML) from NSUT</li></ul></h3></div>
-      <div class="skills shadow"><center><h1>Skills&nbsp&nbsp<img width="10%" src="arch.png"/></h1></center><h3>
+      <div class="skills shadow"><center><h1>Skills&nbsp&nbsp<img width="10%" src="./public/arch.png"/></h1></center><h3>
       <ul><li>Intermidate Python Developer</li><br><li>HTML, CSS and Javascript ES6</li><br><li>Socket programming
       and basic know how of ip addresses and ports.</li></ul></h3></div>
-      <div class="hobbies shadow"><center><h1>Interests&nbsp&nbsp<img width="10%" src="hob.png"/></h1></center><h3>
+      <div class="hobbies shadow"><center><h1>Interests&nbsp&nbsp<img width="10%" src="./public/hob.png"/></h1></center><h3>
       <ul><li>Badminton</li><br><li>Chess</li><br><li>Online Multiplayer games</li></ul></h3></div>
     </div>
 
-    <div class="project font shadow"><h1 class= "ab" style="grid-column: span 2; margin:auto; margin-bottom: 5%;">𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼</h1>
-      <img class = "aa"src="chess.png" width="50%" style="margin: auto;">
-        <div style="flex-basis: 50%;"><h1><img src="leaf.png" width="3%" style="padding-right:2%;">Chess Engine</h1>
+    <div class="project font shadow" id="proo"><h1 class= "ab" style="grid-column: span 2; margin:auto; margin-bottom: 5%;">𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼</h1>
+      <img class = "aa"src="./public/chess.png" width="50%" style="margin: auto;">
+        <div style="flex-basis: 50%;"><h1><img src="./public/leaf.png" width="3%" style="padding-right:2%;">Chess Engine</h1>
           <ul>
           <li>Made with Python's turtle library.</li>
           <li>It has an online mode implemented using Socket programming in python using a client-server architecture.</li>
-          <li style="list-style-type: none;">git link - https://github.com/ojas-sharma-01/Chess_Engine</li>
+          <li style="list-style-type: none;">git link - 
+            <a href="https://github.com/ojas-sharma-01/Chess_Engine"
+            style="color: black;">
+              https://github.com/ojas-sharma-01/Chess_Engine
+            </a>
+            </li>
         </ul>
         </div>
-        <img class = "aa"src="weat.png" width="50%;" style="margin: auto;">
-        <div style="flex-basis: 50%;"><h1><img src="leaf.png" width="3%" style="padding-right:2%;">Weather forecasting website</h1>
+        <img class = "aa"src="./public/weat.png" width="50%;" style="margin: auto;">
+        <div style="flex-basis: 50%;"><h1><img src="./public/leaf.png" width="3%" style="padding-right:2%;">Weather forecasting website</h1>
           <ul>
             <li>A website for forecasting live weather details.</li>
-            <li>It uses the freeweather api to fetch the details. (API link - <a href="https://www.weatherapi.com/">Click Here</a>)</li>
-            <li style="list-style-type: none;">git link - https://github.com/ojas-sharma-01/weather-forecast</li>
+            <li>It uses the freeweather api to fetch the details. (API link - <a 
+              style="color: black;"
+              href="https://www.weatherapi.com/">Click Here</a>)</li>
+            <li style="list-style-type: none;">git link - 
+              <a href="https://github.com/ojas-sharma-01/weather-forecast"
+              style="color: black;">
+                https://github.com/ojas-sharma-01/weather-forecast
+                </a>
+              </li>
           </ul>
     </div>
     </div>
-    <div class="footer" style="background-color:grey;text-align:center; padding-top:2%;">
+    <div class="footer font" style="background-color:black;text-align:center; padding-top:2%;">
       <span style="margin-right:5%"><a href="https://www.linkedin.com/in/ojas-sharma-64aaba246/">Linkedin</a></span>
       <a href="https://github.com/A1serious1programmer">Github</a><br><br>
-      @OjasSharma &nbsp&nbspAll rights reserved</div>
-    <script src="script.js"></script>
+      <span style="color: grey;">@OjasSharma &nbsp&nbspAll rights reserved</span></div>
+    <script src="./public/script.js"></script>
   </body>
 </html>
