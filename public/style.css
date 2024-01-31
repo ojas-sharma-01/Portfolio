@@ -18,26 +18,27 @@
 }
 .phone_nav{
   text-align: center;
-  display: block;
+  border-radius: 0 0 30px 30px;
   position: absolute;
-  border-radius: 30px;
-  top: -5%;
+  top: 0;
   height: 30%;
-  width: 100%;
+  width: calc(100% - 20px);
   background-color: grey;
 }
+
 .hide{
   display: none;
 }
 .name{
   color : white;
   background-color: black;
-  align-items: center;
   display: inline-block;
-  padding-left: 5%;
+  width: 15%;
+  text-align: center;
+  min-width: fit-content;
   border-radius: 0 0 10px 0;
   padding-top: 2%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-right: 10px;
   font-weight: bolder;
 }
@@ -69,13 +70,13 @@ a:hover{
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 80%;
-  height: 70%;
+  height: 90%;
   left: 10%;
   margin: auto;
   margin-top: 5%;
   border-radius: 30px;
+  padding: 70px 0;
   color: black;
-
 }
 
 a{
@@ -105,7 +106,7 @@ margin:auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20% 40% 40%;
   gap: 40px;
-  margin: 200px auto;
+  margin: 250px auto;
   width: 80%;
   height: fit-content;
 }
@@ -135,12 +136,18 @@ margin:auto;
 .project{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 10% 45% 45%;
+  grid-template-rows: 10% 30% 30%;
   border-radius: 30px;
+  gap: 10px;
   padding: 2%;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 300px;
   max-width: 80%;
+  height: 1400px;
+}
+
+li{
+  margin: 10px;
 }
 
 .navbar img:hover{
@@ -148,7 +155,7 @@ margin:auto;
 }
 
 .footer{
-  margin-top: 150px;
+  margin-top: 240px;
   letter-spacing: 0.1em;
   border-radius: 15px 15px 0 0;
   height: 10%;
@@ -189,6 +196,7 @@ a img{
 #main{
   margin:auto;
   margin-left:25%;
+  height: 70%;
 }
 @media (max-width: 1440px){
   #main{
@@ -206,6 +214,9 @@ a img{
   .About_Me{
     font-size: small;
   }
+  .main_cont{
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 1200px){
@@ -218,7 +229,7 @@ a img{
     text-align: center;
   }
   #main{
-    height: 32%;
+    height: 240px;
   }
   .main_cont{
     display: flex;
@@ -233,10 +244,13 @@ a img{
 }
 @media (max-width: 860px){
   body{
-    font-size: 10px;
+    font-size: 16px;
   }
   .navbar span{
     display: None;
+  }
+  .name{
+    padding-top: 20px;
   }
   .navbar{
     width: 20%;
@@ -246,7 +260,7 @@ a img{
     margin-right: 12%;
   }
   #main_c_2{font-size: 30px;}
-  #main_c_3{font-size: 10px;}
+  #main_c_3{font-size: 16px;}
   .cc{
     margin-right: 6%;
   }
@@ -268,14 +282,11 @@ a img{
 }
 
 @media (max-width: 760px) {
-  .acad, .hobbies, .skills{
-    padding: 0;
-  }
   .About_Me{
-    gap: 30px;
+    gap: 50px;
   }
   .footer{
-    top: 335%;
+      margin-top: 150px;
   }
   .hobbies{
     width: 80%;
@@ -286,9 +297,11 @@ a img{
   .name{
     font-size: 25px;
   }
-  #main{height: 5%;}
+  #main{width: 50%; height: auto;}
   .main_cont{
+    margin-top: 80px;
     height: 80%;
+    width: 90%;
   }
   .project{
     height: 90%;
